@@ -16,10 +16,11 @@ void setup()
  
 void loop()
 {
-  while(bluetooth.available()){
+  while(bluetooth.available())
+  {
     message+=char(bluetooth.read());
   }
-  if(!bluetooth.available())
+  if(!bluetooth.available())  
   {
     if(message!="")
     {//if data is available
